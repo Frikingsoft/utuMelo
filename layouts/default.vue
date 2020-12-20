@@ -23,6 +23,10 @@
            <h3> Escuela Superior de Melo</h3>
             <v-icon dark large class="ml-4">mdi-school</v-icon>
           </v-col>
+          <v-col cols="2" class="d-flex justify-center align-center">
+            <input type="text" class="textoIngresado">
+            <input type="button" class="botonLlave" @click="registro">
+          </v-col>
         </v-row>
       </v-container>
     </v-app-bar>
@@ -53,32 +57,13 @@ export default {
       elmensaje:'Tu futuro comienza en UTU ©'
     }
   },
+  methods:{
+    registro(){
+      this.$router.push('/registro')
+    }
+  }
 }
 </script>
 <style scoped>
-
-.titulo {
-  font-size: 30px;
-  letter-spacing: 5px;
-  word-spacing: 8px;
-  color: white;
-}
-.fondo{
-  background-color: rgb(208, 208, 214);
-}
-.banner{
-  background-image: url('../static/imagenes/fondo2.png');
- animation: animar linear 5s infinite;
- background-repeat: repeat;
- background-size: 20% ;
- 
-}
-@keyframes animar{
-  0%{
-    background-position: 0 -500px;
-  }
-  100%{
-    background-position: 0 -50px;
-  }
-}
+@import url('../estilos/default/default.css');
 </style>

@@ -1,0 +1,50 @@
+.titulo {
+    font-size: 30px;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+    color: white;
+    text-shadow: 2px 1px 4px white;
+    
+  }
+  .fondo{
+    background-color: rgb(208, 208, 214);
+  }
+  .banner{
+    background-image: url('./fondo2.png');
+   animation: animar linear 5s infinite;
+   background-repeat: repeat;
+   background-size: 20% ;
+   
+  }
+  
+  .textoIngresado{
+    width: 220px;
+    background-color: white;
+    border-radius: 10%/80%;
+    text-align: center;
+    background-image: url('./lupa.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position-y: 50%;  
+    border: 1px solid rgb(31,31,31); 
+    box-shadow: 1px 1px 8px rgba(237, 238, 238, 0.418); 
+  }
+      .botonLlave {
+      margin-left: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50% 50% 30% 30%;
+      border:3px solid  rgba(237, 238, 238, 0.589);
+      box-shadow: 0 0 2px white; 
+      background-image: url('./llave.png');
+      background-size: 80% 80%;
+      background-position: 50%;
+    }
+    @keyframes animar{
+        0%{
+          background-position: 0 -500px;
+        }
+        100%{
+          background-position: 0 -50px;
+        }
+      }
